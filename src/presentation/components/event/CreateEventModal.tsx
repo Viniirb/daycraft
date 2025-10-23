@@ -30,7 +30,19 @@ export default function CreateEventModal({ isOpen, onClose, selectedInfo }: Prop
 
   const handleSaveEvent = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!title || !selectedInfo || !user) return;
+    if (!title || !selectedInfo || !user) {
+      console.log('Validação falhou:', { title, selectedInfo, user });
+      return;
+    }
+
+    console.log('Criando evento com:', {
+      title,
+      type,
+      start: selectedInfo.startStr,
+      end: selectedInfo.endStr,
+      allDay: selectedInfo.allDay,
+      userId: user.id
+    });
 
     setSubmitting(true);
     try {
@@ -43,14 +55,17 @@ export default function CreateEventModal({ isOpen, onClose, selectedInfo }: Prop
         userId: user.id
       });
 
+      console.log('Resultado da criação:', success);
+
       if (success) {
         onClose();
       } else {
         alert('Erro ao salvar evento. Tente novamente.');
       }
     } catch (err) {
-      console.error('Erro ao salvar evento:', err);
-      alert('Erro ao salvar evento. Tente novamente.');
+      console.error('Erro detalhado ao salvar evento:', err);
+      const errorMessage = err instanceof Error ? err.message : 'Erro desconhecido';
+      alert(`Erro ao salvar evento: ${errorMessage}`);
     } finally {
       setSubmitting(false);
     }

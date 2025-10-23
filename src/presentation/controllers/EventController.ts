@@ -27,8 +27,15 @@ export class EventController {
    * Cria um novo evento
    */
   async createEvent(dto: CreateEventDTO): Promise<EventViewModel> {
-    const event = await this.createEventUseCase.execute(dto);
-    return eventToViewModel(event);
+    console.log('EventController.createEvent - DTO recebido:', dto);
+    try {
+      const event = await this.createEventUseCase.execute(dto);
+      console.log('EventController.createEvent - Evento criado:', event);
+      return eventToViewModel(event);
+    } catch (error) {
+      console.error('EventController.createEvent - Erro:', error);
+      throw error;
+    }
   }
 
   /**

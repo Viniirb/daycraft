@@ -38,7 +38,10 @@ export function useEvents(eventController: EventController, userId: string | und
       await eventController.createEvent(dto);
       return true;
     } catch (err) {
-      setError((err as Error).message || 'Erro ao criar evento');
+      console.error('useEvents.createEvent - Erro capturado:', err);
+      const errorMessage = (err as Error).message || 'Erro ao criar evento';
+      console.error('useEvents.createEvent - Mensagem de erro:', errorMessage);
+      setError(errorMessage);
       return false;
     }
   };

@@ -12,6 +12,13 @@ const firebaseConfig: FirebaseOptions = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || '',
 };
 
+console.log('Firebase Config:', {
+  hasApiKey: !!firebaseConfig.apiKey,
+  hasAuthDomain: !!firebaseConfig.authDomain,
+  hasProjectId: !!firebaseConfig.projectId,
+  projectId: firebaseConfig.projectId
+});
+
 if (!firebaseConfig.apiKey) {
   console.warn(
     'Firebase config not found in environment. Copy `.env.example` to `.env` and fill the values.'
@@ -19,6 +26,7 @@ if (!firebaseConfig.apiKey) {
 }
 
 const app: FirebaseApp = initializeApp(firebaseConfig);
+console.log('Firebase App initialized successfully');
 
 export const firestore: Firestore = getFirestore(app);
 export const auth: Auth = getAuth(app);

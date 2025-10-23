@@ -13,12 +13,18 @@ export class CreateEvent {
   constructor(private readonly eventRepository: IEventRepository) {}
 
   async execute(dto: CreateEventDTO): Promise<Event> {
+    console.log('CreateEvent.execute - Iniciando com DTO:', dto);
+
     // Validações de entrada
     this.validate(dto);
+    console.log('CreateEvent.execute - Validação passou');
 
     // Criar value objects
     const eventType = EventType.fromString(dto.type);
+    console.log('CreateEvent.execute - EventType criado:', eventType);
+
     const dateRange = DateRange.fromISOStrings(dto.start, dto.end, dto.allDay);
+    console.log('CreateEvent.execute - DateRange criado:', dateRange);
 
     // Criar entidade de domínio (sem ID ainda, será gerado pelo repositório)
     const event = Event.create(
@@ -29,9 +35,12 @@ export class CreateEvent {
       dto.userId,
       EventStatus.NOT_STARTED
     );
+    console.log('CreateEvent.execute - Entidade Event criada:', event);
 
     // Persistir no repositório
+    console.log('CreateEvent.execute - Chamando repositório...');
     const createdEvent = await this.eventRepository.create(event);
+    console.log('CreateEvent.execute - Evento persistido:', createdEvent);
 
     return createdEvent;
   }

@@ -17,13 +17,15 @@ export class Event {
     public readonly userId: string,
     public readonly status: EventStatus = EventStatus.NOT_STARTED,
     public readonly createdAt?: Date,
-    public readonly updatedAt?: Date
+    public readonly updatedAt?: Date,
+    private readonly skipIdValidation: boolean = false
   ) {
     this.validate();
   }
 
   private validate(): void {
-    if (!this.id || this.id.trim().length === 0) {
+    // ID pode ser vazio ao criar um novo evento (será gerado pelo repositório)
+    if (!this.skipIdValidation && (!this.id || this.id.trim().length === 0)) {
       throw new Error('Event ID é obrigatório');
     }
 
@@ -86,7 +88,8 @@ export class Event {
       userId,
       status,
       new Date(),
-      new Date()
+      new Date(),
+      true // skipIdValidation: permite ID vazio ao criar novo evento
     );
   }
 
@@ -100,6 +103,16 @@ export class Event {
     createdAt: Date,
     updatedAt: Date
   ): Event {
-    return new Event(id, title, type, dateRange, userId, status, createdAt, updatedAt);
+    return new Event(
+      id,
+      title,
+      type,
+      dateRange,
+      userId,
+      status,
+      createdAt,
+      updatedAt,
+      false // skipIdValidation: false porque o ID já deve existir ao reconstruir
+    );
   }
 }
