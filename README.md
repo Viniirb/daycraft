@@ -583,7 +583,7 @@ Agradecimentos especiais às tecnologias e comunidades:
 </p>
 
 <!-- Estatísticas GitHub -->
-<img src="https://github-readme-stats.vercel.app/api?username=seu-usuario&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=Viniirb&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
 
 <br><br>
 
