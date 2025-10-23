@@ -1,0 +1,76 @@
+.fc {
+  color: #e5e7eb; 
+}
+
+.fc .fc-button {
+  background-color: #374151; 
+  border: 1px solid #4b5563; 
+  color: #f9fafb; 
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.fc .fc-button:hover {
+  background-color: #4b5563;
+}
+
+.fc .fc-button:active {
+  background-color: #374151;
+}
+
+.fc .fc-button-primary:disabled {
+  background-color: #374151; 
+  opacity: 0.5;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #3b82f6; 
+  border-color: #3b82f6;
+}
+
+.fc .fc-col-header-cell {
+  background-color: #1f2937; 
+  border-color: #374151;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #9ca3af;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.fc .fc-daygrid-day {
+  border-color: #374151; 
+}
+
+.fc .fc-daygrid-day-number {
+  color: #d1d5db; 
+  padding: 8px;
+}
+
+.fc .fc-day-other .fc-daygrid-day-number {
+  color: #6b7280; 
+}
+
+.fc .fc-day-today {
+  background-color: rgba(59, 130, 246, 0.1); 
+}
+
+.fc-theme-standard th,
+.fc-theme-standard td,
+.fc-theme-standard .fc-scrollgrid {
+  border-color: #374151;
+}
+
+.fc .fc-popover {
+  background-color: #1f2937; 
+  border-color: #374151; 
+}
+
+.fc .fc-event {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  font-weight: 600;
+}

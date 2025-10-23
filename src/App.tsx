@@ -1,35 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from './firebaseConfig';
+import MainLayout from './layouts/MainLayout';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
+import Finance from './pages/Finance';
+import Hobbies from './pages/Hobbies';
+import { Loader2 } from 'lucide-react';
+import type { JSX } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+function PrivateRoute({ children }: { children: JSX.Element }) {
+  const [user, loading] = useAuthState(auth);
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+  if (loading) {
+    return (
+      <div className="flex h-screen w-screen flex-col items-center justify-center bg-gray-900 text-white">
+        <Loader2 className="h-12 w-12 animate-spin text-blue-400" />
+        <p className="mt-4 text-lg text-gray-300">Carregando...</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    );
+  }
+
+  return user ? <MainLayout>{children}</MainLayout> : <Navigate to="/login" />;
 }
 
-export default App
+function App() {
+  const [user, loading] = useAuthState(auth);
+
+  if (loading) {
+    return (
+      <div className="flex h-screen w-screen flex-col items-center justify-center bg-gray-900 text-white">
+        <Loader2 className="h-12 w-12 animate-spin text-blue-400" />
+      </div>
+    );
+  }
+
+  return (
+    <HashRouter>
+      <Routes>
+        <Route
+          path="/login"
+          element={user ? <Navigate to="/" /> : <Login />}
+        />
+        <Route
+          path="/register"
+          element={user ? <Navigate to="/" /> : <Register />}
+        />
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/finance"
+          element={
+            <PrivateRoute>
+              <Finance />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/hobbies"
+          element={
+            <PrivateRoute>
+              <Hobbies />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
+    </HashRouter>
+  );
+}
+
+export default App;
