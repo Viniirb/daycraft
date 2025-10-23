@@ -8,16 +8,16 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Dependencies
-node_modules
+/node_modules
 .pnp
 .pnp.js
 
 # Build outputs
-dist
-dist-ssr
-dist-electron
-build
-out
+/dist
+/dist-ssr
+/dist-electron
+/build
+/out
 *.local
 
 # Environment variables
@@ -39,6 +39,7 @@ ui-debug.log
 !.vscode/extensions.json
 .idea
 .DS_Store
+.claude
 *.suo
 *.ntvs*
 *.njsproj
@@ -51,16 +52,20 @@ Thumbs.db
 .LSOverride
 
 # Testing
-coverage
+/coverage
 *.lcov
 .nyc_output
 
 # Electron
-release
-app/dist
+/release
+/app/dist
 .webpack
 
 # Temporary files
 *.tmp
 *.temp
 .cache
+
+# configuration / API keys
+# Ignore compiled or real config containing secrets; keep a template like firebaseConfig.example.ts
+firebaseConfig.ts

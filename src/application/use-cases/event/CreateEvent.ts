@@ -1,0 +1,64 @@
+import { Event, EventStatus } from '../../../domain/entities/Event';
+import type { IEventRepository } from '../../../domain/repositories/IEventRepository';
+import { EventType } from '../../../domain/value-objects/EventType';
+import { DateRange } from '../../../domain/value-objects/DateRange';
+import type { CreateEventDTO } from '../../dto/CreateEventDTO';
+import { ValidationError } from '../../../shared/errors';
+
+/**
+ * CreateEvent Use Case - Application Layer
+ * Responsável por criar novos eventos
+ */
+export class CreateEvent {
+  constructor(private readonly eventRepository: IEventRepository) {}
+
+  async execute(dto: CreateEventDTO): Promise<Event> {
+    // Validações de entrada
+    this.validate(dto);
+
+    // Criar value objects
+    const eventType = EventType.fromString(dto.type);
+    const dateRange = DateRange.fromISOStrings(dto.start, dto.end, dto.allDay);
+
+    // Criar entidade de domínio (sem ID ainda, será gerado pelo repositório)
+    const event = Event.create(
+      '', // ID será gerado pelo repositório
+      dto.title.trim(),
+      eventType,
+      dateRange,
+      dto.userId,
+      EventStatus.NOT_STARTED
+    );
+
+    // Persistir no repositório
+    const createdEvent = await this.eventRepository.create(event);
+
+    return createdEvent;
+  }
+
+  private validate(dto: CreateEventDTO): void {
+    if (!dto.title || dto.title.trim().length === 0) {
+      throw new ValidationError('Título é obrigatório', 'title');
+    }
+
+    if (dto.title.length > 200) {
+      throw new ValidationError('Título não pode ter mais de 200 caracteres', 'title');
+    }
+
+    if (!dto.type) {
+      throw new ValidationError('Tipo do evento é obrigatório', 'type');
+    }
+
+    if (!dto.start) {
+      throw new ValidationError('Data de início é obrigatória', 'start');
+    }
+
+    if (!dto.end) {
+      throw new ValidationError('Data de fim é obrigatória', 'end');
+    }
+
+    if (!dto.userId) {
+      throw new ValidationError('Usuário não identificado', 'userId');
+    }
+  }
+}

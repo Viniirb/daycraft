@@ -26,12 +26,6 @@
   </a>
 </p>
 
-<!-- Estatísticas do Projeto -->
-<p align="center">
-  <img src="https://img.shields.io/github/stars/seu-usuario/daycraft?style=social" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/seu-usuario/daycraft?style=social" alt="Forks" />
-  <img src="https://img.shields.io/github/watchers/seu-usuario/daycraft?style=social" alt="Watchers" />
-</p>
 
 <!-- Descrição com animação -->
 <p align="center">
@@ -542,7 +536,7 @@ Desenvolvido com 💙 e ☕ para facilitar o gerenciamento pessoal diário.
 ### Conecte-se
 
 - 🐙 GitHub: [Viniirb](https://github.com/Viniirb)
-- 💼 LinkedIn: [Seu Nome](https://linkedin.com/in/seu-nome)
+- 💼 LinkedIn: [Vinicius Rolim Barbosa](https://www.linkedin.com/in/vinicius-rolim-barbosa-15b066374/)
 
 ---
 
@@ -582,12 +576,8 @@ Agradecimentos especiais às tecnologias e comunidades:
   </a>
 </p>
 
-<!-- Estatísticas GitHub -->
-<img src="https://github-readme-stats.vercel.app/api?username=Viniirb&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-
 <br><br>
 
-<!-- Copyright -->
 <sub>© 2025 DayCraft - MIT License</sub>
 
 </div>
