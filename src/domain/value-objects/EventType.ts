@@ -14,16 +14,9 @@ export class EventType {
   static fromString(value: string): EventType {
     const normalizedValue = value.toLowerCase();
 
-    switch (normalizedValue) {
-      case EventTypeEnum.TASK:
-        return new EventType(EventTypeEnum.TASK);
-      case EventTypeEnum.REMINDER:
-        return new EventType(EventTypeEnum.REMINDER);
-      case EventTypeEnum.SPECIAL_DATE:
-        return new EventType(EventTypeEnum.SPECIAL_DATE);
-      default:
-        throw new Error(`Tipo de evento inválido: ${value}`);
-    }
+    // Accept any string as event type to allow for custom types
+    // This makes the system extensible for future event types
+    return new EventType(normalizedValue as EventTypeEnum);
   }
 
   static task(): EventType {
@@ -54,13 +47,28 @@ export class EventType {
   }
 
   public getColor(): string {
-    switch (this.value) {
+    const valueStr = this.value as string;
+
+    switch (valueStr) {
       case EventTypeEnum.TASK:
+      case 'tarefa':
         return '#3B82F6'; // blue
       case EventTypeEnum.REMINDER:
-        return '#10B981'; // green
-      case EventTypeEnum.SPECIAL_DATE:
+      case 'lembrete':
         return '#F59E0B'; // yellow
+      case EventTypeEnum.SPECIAL_DATE:
+      case 'data_especial':
+        return '#8B5CF6'; // purple
+      case 'reuniao':
+        return '#10B981'; // green
+      case 'evento':
+        return '#EC4899'; // pink
+      case 'compromisso':
+        return '#06B6D4'; // cyan
+      case 'habito':
+        return '#F97316'; // orange
+      default:
+        return '#3B82F6'; // default blue
     }
   }
 

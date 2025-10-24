@@ -1,76 +1,245 @@
+/* FullCalendar Minimal Theme */
 .fc {
-  color: #e5e7eb; 
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+/* Buttons - Minimal Design */
 .fc .fc-button {
-  background-color: #374151; 
-  border: 1px solid #4b5563; 
-  color: #f9fafb; 
+  background-color: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #ffffff;
   box-shadow: none;
   transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .fc .fc-button:hover {
-  background-color: #4b5563;
+  background-color: #222222;
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
 }
 
 .fc .fc-button:active {
-  background-color: #374151;
+  background-color: #1a1a1a;
+  transform: translateY(0);
+}
+
+.fc .fc-button:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
 }
 
 .fc .fc-button-primary:disabled {
-  background-color: #374151; 
-  opacity: 0.5;
+  background-color: #1a1a1a;
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .fc .fc-button-primary:not(:disabled).fc-button-active {
-  background-color: #3b82f6; 
+  background-color: #3b82f6;
   border-color: #3b82f6;
+  color: #ffffff;
 }
 
+/* Toolbar */
+.fc .fc-toolbar-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Header Cells */
 .fc .fc-col-header-cell {
-  background-color: #1f2937; 
-  border-color: #374151;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.05);
+  padding: 12px 0;
 }
 
 .fc .fc-col-header-cell-cushion {
-  color: #9ca3af;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  color: #a0a0a0;
+  padding: 8px;
   font-weight: 600;
-  text-transform: capitalize;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
+/* Day Cells */
 .fc .fc-daygrid-day {
-  border-color: #374151; 
+  border-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.fc .fc-daygrid-day:hover {
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .fc .fc-daygrid-day-number {
-  color: #d1d5db; 
+  color: #ffffff;
   padding: 8px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .fc .fc-day-other .fc-daygrid-day-number {
-  color: #6b7280; 
+  color: #666666;
 }
 
 .fc .fc-day-today {
-  background-color: rgba(59, 130, 246, 0.1); 
+  background-color: rgba(59, 130, 246, 0.05) !important;
 }
 
+.fc .fc-day-today .fc-daygrid-day-number {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+/* Grid Borders */
 .fc-theme-standard th,
 .fc-theme-standard td,
 .fc-theme-standard .fc-scrollgrid {
-  border-color: #374151;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Time Grid */
+.fc .fc-timegrid-slot {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.fc .fc-timegrid-slot-label {
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+/* Popover */
+.fc .fc-popover {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.fc .fc-popover-header {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Events - Use dynamic colors from event data */
+.fc .fc-event {
+  border: none;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fc .fc-event:hover {
+  filter: brightness(1.2);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Event Time Text */
+.fc .fc-event-time {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* Event Title Text */
+.fc .fc-event-title {
+  font-weight: 500;
+}
+
+/* Day Grid Event Spacing */
+.fc .fc-daygrid-event {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* More Link */
+.fc .fc-daygrid-more-link {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.fc .fc-daygrid-more-link:hover {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+/* Scrollbars */
+.fc-scroller::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.fc-scroller::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.fc-scroller::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+.fc-scroller::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+.fc .fc-button {
+  background-color: #14171a; /* slightly lighter */
+}
+
+.fc .fc-col-header-cell {
+  background-color: #0f1720; /* avoid bright white stripe */
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #c7cad0;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #e6e9ec; /* lighter number for readability */
+}
+
+.fc .fc-day-other .fc-daygrid-day-number {
+  color: #8a8f94;
+}
+
+.fc .fc-daygrid-day:hover {
+  background-color: rgba(255,255,255,0.03);
+}
+
+.fc .fc-day-today {
+  background-color: rgba(59,130,246,0.06) !important;
+}
+
+.fc .fc-timegrid-slot-label {
+  color: #b0b5bb;
 }
 
 .fc .fc-popover {
-  background-color: #1f2937; 
-  border-color: #374151; 
+  background-color: #111419;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
 }
 
-.fc .fc-event {
-  background-color: #2563eb;
-  border-color: #2563eb;
-  font-weight: 600;
+.fc .fc-popover-header {
+  background-color: #15181b;
+}
+
+.fc-scroller::-webkit-scrollbar-track {
+  background: #0f1114;
+}
+
+.fc-scroller::-webkit-scrollbar-thumb {
+  background: #444444;
 }

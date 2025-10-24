@@ -14,8 +14,9 @@ let win: BrowserWindowType | null;
 
 function createWindow() {
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
+    backgroundColor: '#0a0a0a',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
@@ -23,14 +24,12 @@ function createWindow() {
 
   if (process.env.VITE_DEV_SERVER_URL) {
     win.loadURL(process.env.VITE_DEV_SERVER_URL);
+    win.webContents.once('did-finish-load', () => {
+      win?.webContents.openDevTools();
+    });
   } else {
     win.loadFile(path.join(__dirname, '../renderer/index.html'));
   }
-
-  // Abre o DevTools automaticamente
-  win.webContents.once('did-finish-load', () => {
-    win?.webContents.openDevTools();
-  });
 
   win.on('closed', () => {
     win = null;

@@ -4,10 +4,10 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=DayCraft&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=fff" />
 
 <h3>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=false&width=600&lines=Sua+Vida+Organizada+em+Um+S%C3%B3+Lugar;Calend%C3%A1rio+%E2%9C%85+Tarefas+%E2%9C%85+Finan%C3%A7as;Feito+com+React+%2B+Electron+%2B+Firebase" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=false&width=600&lines=Organize+Sua+Vida+em+Um+S%C3%B3+Lugar;Calend%C3%A1rio+%E2%9C%85+H%C3%A1bitos+%E2%9C%85+Finan%C3%A7as+%E2%9C%85+M%C3%BAsica;Clean+Architecture+%2B+React+%2B+Electron" alt="Typing SVG" />
 </h3>
 
-<!-- Badges Animados -->
+<!-- Badges -->
 <p align="center">
   <a href="https://reactjs.org/">
     <img src="https://img.shields.io/badge/React-19.1-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
@@ -21,254 +21,211 @@
   <a href="https://firebase.google.com/">
     <img src="https://img.shields.io/badge/Firebase-12.4-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
   </a>
-  <a href="https://vitejs.dev/">
-    <img src="https://img.shields.io/badge/Vite-7.1-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <a href="https://tailwindcss.com/">
+    <img src="https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
   </a>
 </p>
 
-
-<!-- Descrição com animação -->
 <p align="center">
-  <b>DayCraft</b> é uma aplicação desktop moderna e elegante para gerenciamento pessoal completo.<br>
-  Combine calendário, tarefas, lembretes, finanças e hobbies em uma interface intuitiva e responsiva.
+  <b>DayCraft</b> é uma aplicação desktop moderna e minimalista para gerenciamento pessoal completo.<br>
+  Calendário inteligente, tracking de hábitos, gestão de tarefas e muito mais em uma interface elegante.
 </p>
 
-<!-- Menu de Navegação -->
 <p align="center">
   <a href="#-funcionalidades">Funcionalidades</a> •
+  <a href="#-arquitetura">Arquitetura</a> •
   <a href="#-instalação">Instalação</a> •
-  <a href="#-como-usar">Uso</a> •
   <a href="#-tecnologias">Tecnologias</a> •
   <a href="#-contribuindo">Contribuir</a>
 </p>
 
-<!-- Divisor Animado -->
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 </div>
 
-## 📸 Preview
+## ✨ Funcionalidades
 
-<div align="center">
+### 🎯 Gerenciamento de Eventos
 
-> *Gerencie seu dia a dia com uma interface moderna e intuitiva*
+**7 Tipos de Eventos Diferentes:**
+- ✓ **Tarefas** - Organize seus afazeres com checklist integrado
+- 🔔 **Lembretes** - Nunca esqueça compromissos importantes
+- ⭐ **Datas Especiais** - Aniversários, feriados e comemorações
+- 👥 **Reuniões** - Gerencie seus encontros profissionais
+- 🎉 **Eventos** - Festas e ocasiões especiais
+- 📅 **Compromissos** - Consultas, appointments e mais
+- 🎯 **Hábitos** - Sistema completo de tracking de hábitos
 
-<!-- Placeholder para screenshots - você pode adicionar suas próprias imagens -->
-<img src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" width="400">
+### 📋 Recursos Avançados
 
-<details>
-<summary>🖼️ Clique para ver mais screenshots</summary>
+**Checklist Integrado:**
+- ✅ Adicione listas de tarefas dentro de eventos
+- ✓ Marque itens como concluídos
+- 🗑️ Remova itens com um clique
+- 📊 Acompanhe o progresso visualmente
 
-<br>
+**Sistema de Recorrência:**
+- 🔄 Eventos diários
+- 📅 Eventos semanais
+- 📆 Eventos mensais
+- 🚫 Eventos únicos
 
-### 📅 Dashboard do Calendário
-> Em breve: adicione suas screenshots aqui
+**Tracking de Hábitos:**
+- 🎯 Defina meta de dias (1-365)
+- 🔥 Acompanhe sequência (streak) atual
+- 📊 Visualize progresso com barra animada
+- ➕➖ Controles manuais de incremento/decremento
+- 📈 Percentual de conclusão em tempo real
 
-### 🔐 Tela de Login
-> Em breve: adicione suas screenshots aqui
+### 🎨 Interface Minimalista
 
-### ✨ Modal de Criação de Eventos
-> Em breve: adicione suas screenshots aqui
+- 🌑 **Design Monocromático** - Preto, branco e cinza com acentos vibrantes
+- ✨ **Animações Suaves** - Tailwind CSS animations com delays escalonados
+- 🎭 **Logo Personalizado** - Gradiente azul-roxo com animação sparkle
+- 💬 **Frases Inspiradoras** - Mensagens motivacionais aleatórias na Dashboard
+- 📱 **Totalmente Responsivo** - Adapta-se a qualquer tamanho de tela
 
-</details>
+### 🗓️ Calendário Completo
 
-</div>
-
-### 🎯 Principais Recursos
-
-- 📅 **Calendário Completo** - Visualização mensal, semanal e diária com FullCalendar
-- ✅ **Gerenciamento de Tarefas** - Organize suas tarefas com status personalizados
-- 🔔 **Lembretes Inteligentes** - Nunca mais perca um compromisso importante
-- 🎉 **Datas Especiais** - Marque aniversários, feriados e eventos importantes
-- 💰 **Controle Financeiro** - *(Em desenvolvimento)* Gerencie suas finanças
-- 🎨 **Hobbies & Interesses** - *(Em desenvolvimento)* Acompanhe suas atividades favoritas
-- 🔐 **Autenticação Segura** - Login com Google e GitHub via Firebase
-- ☁️ **Sincronização em Nuvem** - Seus dados sempre atualizados em tempo real
-- 🌙 **Interface Dark Mode** - Design moderno e confortável para os olhos
-- 🖥️ **Aplicação Desktop** - Experiência nativa com Electron
-
----
-
-## 🚀 Funcionalidades
-
-### 📅 Dashboard & Calendário
-
-O coração do DayCraft é um calendário interativo completo onde você pode:
-
-- ✨ Criar eventos com **drag & drop** ou clicando em datas
-- 🎨 Categorizar eventos por tipo com **cores distintas**:
-  - 🔵 **Azul** - Tarefas e afazeres
-  - 🟢 **Verde** - Lembretes e notificações
-  - 🟡 **Amarelo** - Datas especiais e comemorações
-- 👁️ Alternar entre visualizações: **Mês**, **Semana**, **Dia**
-- 📱 Interface totalmente **responsiva**
-- ⚡ **Sincronização instantânea** com Firebase Firestore
+- 📅 Visualizações: Mês, Semana, Dia
+- 🖱️ Criação por drag & drop ou clique
+- ✏️ Edição de eventos com clique
+- 🗑️ Exclusão com confirmação
+- ⏰ Suporte a horários personalizados
+- 🎨 Cores dinâmicas por tipo de evento
+- ☁️ Sincronização em tempo real com Firebase
 
 ### 🔐 Autenticação & Segurança
 
-- 🔑 Login social com **Google** e **GitHub**
-- 👤 Sistema de **registro de usuários**
-- 🛡️ Dados isolados por usuário (privacidade garantida)
+- 🔑 Login com Google e GitHub
+- 👤 Registro com email/senha
+- 🛡️ Dados isolados por usuário
 - 🔄 Sessões persistentes
 - 🚪 Logout seguro
 
-### 🌐 Sincronização em Tempo Real
+---
 
-- ☁️ Todos os dados salvos automaticamente no **Firestore**
-- 🔄 Atualizações instantâneas entre dispositivos
-- 📊 Filtros de dados por usuário autenticado
-- ⚡ React Firebase Hooks para performance otimizada
+## 🏗️ Arquitetura
 
-<!-- Divisor -->
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+DayCraft utiliza **Clean Architecture** para garantir código organizado, testável e manutenível:
 
-## 🛠️ Tecnologias
+```
+📂 src/
+├── 📂 domain/                    # Camada de Domínio
+│   ├── entities/                # Entidades de negócio
+│   │   └── Event.ts            # Evento com checklist e hábitos
+│   ├── repositories/           # Interfaces de repositórios
+│   └── value-objects/          # Objetos de valor
+│       ├── EventType.ts        # 7 tipos de eventos
+│       └── DateRange.ts        # Manipulação de datas
+│
+├── 📂 application/              # Camada de Aplicação
+│   ├── dto/                    # Data Transfer Objects
+│   │   └── CreateEventDTO.ts  # DTO com checklist, recurrence, habits
+│   └── use-cases/              # Casos de uso
+│       └── event/
+│           ├── CreateEvent.ts
+│           ├── UpdateEvent.ts
+│           ├── DeleteEvent.ts
+│           └── GetUserEvents.ts
+│
+├── 📂 infrastructure/           # Camada de Infraestrutura
+│   └── firebase/
+│       ├── repositories/       # Implementações Firebase
+│       │   └── FirebaseEventRepository.ts
+│       └── mappers/            # Conversão de dados
+│           └── EventMapper.ts  # Domain ↔ Firestore
+│
+├── 📂 presentation/             # Camada de Apresentação
+│   ├── pages/
+│   │   ├── Dashboard.tsx       # Dashboard com frases inspiradoras
+│   │   ├── Calendar.tsx        # Calendário FullCalendar
+│   │   ├── Music.tsx          # Integração Spotify (em breve)
+│   │   ├── Games.tsx          # Steam/PSN (em breve)
+│   │   ├── Finance.tsx        # Gestão financeira (em breve)
+│   │   └── Hobbies.tsx        # Tracking de hobbies (em breve)
+│   │
+│   ├── components/
+│   │   ├── event/
+│   │   │   └── CreateEventModal.tsx  # Modal completo com todos recursos
+│   │   └── layout/
+│   │       ├── Sidebar.tsx           # Navegação com logo personalizado
+│   │       └── MainLayout.tsx        # Layout principal
+│   │
+│   ├── hooks/                  # Custom React Hooks
+│   │   ├── useAuth.ts
+│   │   └── useEvents.ts
+│   │
+│   ├── controllers/            # Controladores (facade)
+│   │   ├── AuthController.ts
+│   │   └── EventController.ts
+│   │
+│   └── view-models/            # ViewModels para UI
+│       └── EventViewModel.ts   # Formato FullCalendar
+│
+└── 📂 main/                     # Camada Main (Dependency Injection)
+    └── factories/              # Factories de dependências
+        ├── controllers/
+        └── repositories/
+```
 
-<div align="center">
+### 🎯 Princípios Aplicados
 
-<!-- Stack Visual com Ícones Animados -->
-<table>
-<tr>
-<td align="center" width="140">
-<img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-<br>React
-</td>
-<td align="center" width="140">
-<img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65" />
-<br>TypeScript
-</td>
-<td align="center" width="140">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="Electron" width="65" height="65" />
-<br>Electron
-</td>
-<td align="center" width="140">
-<img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" width="65" height="65" />
-<br>Firebase
-</td>
-<td align="center" width="140">
-<img src="https://skillicons.dev/icons?i=vite" alt="Vite" width="65" height="65" />
-<br>Vite
-</td>
-</tr>
-<tr>
-<td align="center" width="140">
-<img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" width="65" height="65" />
-<br>Tailwind CSS
-</td>
-<td align="center" width="140">
-<img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width="65" height="65" />
-<br>Node.js
-</td>
-<td align="center" width="140">
-<img src="https://skillicons.dev/icons?i=npm" alt="npm" width="65" height="65" />
-<br>npm
-</td>
-<td align="center" width="140">
-<img src="https://skillicons.dev/icons?i=git" alt="Git" width="65" height="65" />
-<br>Git
-</td>
-<td align="center" width="140">
-<img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="65" height="65" />
-<br>GitHub
-</td>
-</tr>
-</table>
-
-</div>
+- ✅ **Separation of Concerns** - Cada camada com responsabilidade única
+- ✅ **Dependency Inversion** - Dependências apontam para abstrações
+- ✅ **Single Responsibility** - Classes focadas e coesas
+- ✅ **Open/Closed Principle** - Extensível sem modificar código existente
+- ✅ **Interface Segregation** - Interfaces específicas e enxutas
 
 ---
 
-### Frontend Core
+## 🛠️ Tecnologias
+
+### Core Stack
 
 | Tecnologia | Versão | Descrição |
 |-----------|--------|-----------|
-| ![React](https://img.shields.io/badge/React-19.1.1-61DAFB?logo=react) | `19.1.1` | Biblioteca para UI reativa |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript) | `5.9.3` | Tipagem estática e segurança |
-| ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.18-38B2AC?logo=tailwind-css) | `3.4.18` | Framework CSS utilitário |
-| ![Vite](https://img.shields.io/badge/Vite-7.1.7-646CFF?logo=vite) | `7.1.7` | Build tool ultra-rápido |
+| ![React](https://img.shields.io/badge/React-19.1-61DAFB?logo=react) | `19.1.1` | UI Library com hooks modernos |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript) | `5.9.3` | Tipagem estática forte |
+| ![Electron](https://img.shields.io/badge/Electron-38.4-47848F?logo=electron) | `38.4.0` | Desktop cross-platform |
+| ![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwind-css) | `3.4.18` | Utility-first CSS |
+| ![Vite](https://img.shields.io/badge/Vite-7.1-646CFF?logo=vite) | `7.1.7` | Build tool ultra-rápido |
 
 ### UI & Componentes
 
-- 📆 **FullCalendar** `6.1.19` - Calendário completo e interativo
-- 🎨 **Headless UI** `2.2.9` - Componentes acessíveis React
-- 🎯 **Lucide React** `0.546.0` - Ícones modernos e leves
+- 📆 **FullCalendar** `6.1.19` - Calendário rico e interativo
+- 🎨 **Headless UI** `2.2.9` - Componentes acessíveis
+- 🎯 **Lucide React** `0.546.0` - Ícones SVG modernos
 - 🧭 **React Router DOM** `7.9.4` - Roteamento SPA
-
-### Desktop & Build
-
-- ⚡ **Electron** `38.4.0` - Framework para apps desktop
-- 🔧 **Electron Builder** `26.0.12` - Empacotamento e distribuição
-- 🔌 **Vite Plugin Electron** `0.29.0` - Integração Vite + Electron
 
 ### Backend & Database
 
 - 🔥 **Firebase** `12.4.0` - Backend as a Service
-- 💾 **Firestore** - Banco NoSQL em tempo real
-- 🔐 **Firebase Auth** - Autenticação robusta
+- 💾 **Firestore** - NoSQL real-time database
+- 🔐 **Firebase Auth** - Autenticação multi-provider
 - ⚛️ **React Firebase Hooks** `5.1.1` - Hooks otimizados
 
-### Dev Tools & Quality
+### Dev Tools
 
 - 🧹 **ESLint** `9.36.0` - Linter de código
 - 📐 **TypeScript ESLint** `8.45.0` - Regras TypeScript
 - 🎯 **Autoprefixer** `10.4.21` - Compatibilidade CSS
-- 📦 **PostCSS** `8.5.6` - Transformações CSS
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-daycraft/
-│
-├── 📂 electron/              # Código Electron (Processo Principal)
-│   ├── main.ts              # Entry point do Electron
-│   └── preload.ts           # Script de contexto isolado
-│
-├── 📂 src/                   # Código-fonte React
-│   │
-│   ├── 📂 components/        # Componentes reutilizáveis
-│   │   ├── CreateEventModal.tsx    # Modal de criação de eventos
-│   │   └── Sidebar.tsx             # Navegação lateral
-│   │
-│   ├── 📂 layouts/           # Layouts da aplicação
-│   │   └── MainLayout.tsx   # Layout principal com sidebar
-│   │
-│   ├── 📂 pages/             # Páginas/Rotas
-│   │   ├── Dashboard.tsx    # 📅 Calendário principal
-│   │   ├── Finance.tsx      # 💰 Gestão financeira
-│   │   ├── Hobbies.tsx      # 🎨 Hobbies e interesses
-│   │   ├── Login.tsx        # 🔐 Página de login
-│   │   └── Register.tsx     # 📝 Registro de usuários
-│   │
-│   ├── App.tsx              # Componente raiz + rotas
-│   ├── main.tsx             # Entry point React
-│   ├── firebaseConfig.ts    # Configuração Firebase
-│   ├── index.css            # Estilos globais
-│   └── calendar-theme.css   # Tema customizado FullCalendar
-│
-├── 📂 dist-electron/         # Build Electron (gerado)
-├── 📂 dist/                  # Build React (gerado)
-│
-├── package.json             # Dependências e scripts
-├── vite.config.ts           # Configuração Vite
-├── tsconfig.json            # Configuração TypeScript
-├── tailwind.config.js       # Configuração Tailwind
-├── postcss.config.js        # Configuração PostCSS
-└── .gitignore               # Arquivos ignorados
-```
 
 ---
 
 ## ⚙️ Instalação
 
-<div align="center">
+### 📋 Pré-requisitos
+
+- ✅ **Node.js** `18.x` ou superior
+- ✅ **npm** `9.x` ou superior
+- ✅ **Conta Firebase** ([Console](https://console.firebase.google.com/))
 
 ### 🚀 Instalação Rápida
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/daycraft.git
+git clone https://github.com/Viniirb/daycraft.git
 
 # Entre no diretório
 cd daycraft
@@ -276,66 +233,71 @@ cd daycraft
 # Instale as dependências
 npm install
 
-# Configure o .env (veja abaixo)
+# Configure as variáveis de ambiente (veja abaixo)
+# Linux / macOS / Git Bash:
+cp .env.example .env
+# Windows (cmd.exe):
+copy .env.example .env
 
 # Execute o projeto
 npm run dev
 ```
 
-<img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100">
+### 🔑 Configuração Firebase
 
-</div>
-
-### 📋 Pré-requisitos
-
-Certifique-se de ter instalado:
-
-- ✅ **Node.js** `18.x` ou superior ([Download](https://nodejs.org/))
-- ✅ **npm** `9.x` ou superior (incluído com Node.js)
-- ✅ **Conta Firebase** ([Console](https://console.firebase.google.com/))
-
-### 📝 Passo a Passo Detalhado
-
-#### 1️⃣ Clone o Repositório
-
-```bash
-git clone https://github.com/seu-usuario/daycraft.git
-cd daycraft
-```
-
-#### 2️⃣ Instale as Dependências
-
-```bash
-npm install
-```
-
-#### 3️⃣ Configure o Firebase
-
-##### 3.1 - Crie um Projeto Firebase
+#### 1. Crie um Projeto Firebase
 
 1. Acesse [Firebase Console](https://console.firebase.google.com/)
 2. Clique em **"Adicionar projeto"**
 3. Siga o assistente de criação
 
-##### 3.2 - Habilite os Serviços
+#### 2. Habilite os Serviços
 
-- **Firestore Database**: `Firestore Database` → `Criar banco de dados` → Modo teste
-- **Authentication**: `Authentication` → `Começar` → Habilite:
+**Firestore Database:**
+- Navegue até `Firestore Database`
+- Clique em `Criar banco de dados`
+- Escolha modo de produção
+- Defina localização
+
+**Authentication:**
+- Navegue até `Authentication`
+- Clique em `Começar`
+- Habilite os provedores:
   - ✅ Google
-  - ✅ GitHub (configure OAuth App no GitHub)
+  - ✅ Email/Senha
+  - ✅ GitHub (opcional - configure OAuth App)
 
-##### 3.3 - Obtenha as Credenciais
+#### 3. Configure Regras de Segurança
 
-1. Vá em **Configurações do Projeto** (ícone de engrenagem)
-2. Role até **"Seus apps"** → **"SDK config"**
-3. Copie as credenciais
+No Firestore Database → Rules, adicione:
 
-##### 3.4 - Configure Variáveis de Ambiente
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /events/{eventId} {
+      allow read, write: if request.auth != null &&
+                           request.auth.uid == resource.data.userId;
+      allow create: if request.auth != null &&
+                       request.auth.uid == request.resource.data.userId;
+    }
+  }
+}
+```
 
-Crie um arquivo `.env` na **raiz do projeto**:
+#### 4. Obtenha as Credenciais
+
+1. Vá em **Configurações do Projeto** (⚙️)
+2. Role até **"Seus apps"**
+3. Clique em **Web** (</>) se não existir
+4. Copie o objeto `firebaseConfig`
+
+#### 5. Configure `.env`
+
+Crie um arquivo `.env` na raiz do projeto:
 
 ```env
-VITE_FIREBASE_API_KEY=AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+VITE_FIREBASE_API_KEY=sua_api_key_aqui
 VITE_FIREBASE_AUTH_DOMAIN=seu-projeto.firebaseapp.com
 VITE_FIREBASE_PROJECT_ID=seu-projeto-id
 VITE_FIREBASE_STORAGE_BUCKET=seu-projeto.appspot.com
@@ -344,144 +306,107 @@ VITE_FIREBASE_APP_ID=1:123456789012:web:abcdef123456
 VITE_FIREBASE_MEASUREMENT_ID=G-XXXXXXXXXX
 ```
 
-⚠️ **IMPORTANTE**: O arquivo `.env` já está no `.gitignore`. **NUNCA** comite credenciais!
-
-#### 4️⃣ Atualize `firebaseConfig.ts`
-
-Substitua as credenciais hardcoded por variáveis de ambiente:
-
-```typescript
-const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
-};
-```
-
-#### 5️⃣ Execute a Aplicação
-
-```bash
-npm run dev
-```
-
-A aplicação será aberta automaticamente! 🎉
-
----
-
-## 💻 Como Usar
-
-### Criando Eventos
-
-1. **📅 Dashboard**: Acesse a tela principal do calendário
-2. **🖱️ Selecione uma data**: Clique ou arraste sobre o calendário
-3. **📝 Modal**: Preencha o formulário que abre:
-   - **Título**: Nome do evento
-   - **Tipo**: Escolha entre Tarefa, Lembrete ou Data Especial
-4. **💾 Salvar**: Clique em "Salvar" - o evento aparece instantaneamente!
-
-### Navegando no Calendário
-
-- **◀️ ▶️ Setas**: Navegue entre meses/semanas
-- **📆 Hoje**: Volte para a data atual
-- **👁️ Visualizações**: Alterne entre Mês, Semana e Dia
-
-### Autenticação
-
-- **🔐 Login**: Use Google ou GitHub para login rápido
-- **📝 Registro**: Crie uma conta com email e senha
-- **🚪 Logout**: Use o botão na sidebar
+⚠️ **IMPORTANTE**: Nunca comite o arquivo `.env`! Ele já está no `.gitignore`.
 
 ---
 
 ## 📜 Scripts Disponíveis
 
 ```bash
-# 🚀 Desenvolvimento - Inicia app Electron com hot reload
+# Desenvolvimento - Inicia app Electron com hot reload
 npm run dev
 
-# 🏗️ Build - Compila TypeScript e React para produção
+# Build - Compila para produção
 npm run build
 
-# 👀 Preview - Visualiza build de produção
+# Preview - Visualiza build de produção
 npm run preview
 
-# 🧹 Lint - Verifica qualidade do código
+# Lint - Verifica qualidade do código
 npm run lint
 ```
 
 ---
 
-## 🔒 Segurança
+## 🎨 Design System
 
-### ⚠️ Checklist de Segurança
+### Paleta de Cores
 
-- ✅ **Nunca** comite o arquivo `.env`
-- ✅ **Use variáveis de ambiente** para credenciais
-- ✅ Configure **regras de segurança do Firestore**:
+```css
+/* Monocromático Base */
+--bg-primary: #0a0a0a      /* Deep black */
+--bg-secondary: #111111     /* Soft black */
+--bg-tertiary: #1a1a1a     /* Dark gray */
+--bg-hover: #222222        /* Subtle hover */
 
-```javascript
-// Firestore Rules - Exemplo seguro
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /events/{eventId} {
-      allow read, write: if request.auth != null &&
-                           request.auth.uid == resource.data.userId;
-    }
-  }
-}
+/* Cores de Acento (apenas highlights) */
+--accent-blue: #3b82f6     /* Tarefas */
+--accent-yellow: #f59e0b   /* Lembretes */
+--accent-purple: #8b5cf6   /* Datas Especiais */
+--accent-green: #10b981    /* Reuniões */
+--accent-pink: #ec4899     /* Eventos */
+--accent-cyan: #06b6d4     /* Compromissos */
+--accent-orange: #f97316   /* Hábitos */
 ```
 
-- ✅ Regenere credenciais se expostas acidentalmente
-- ✅ Use **autenticação multi-fator** no Firebase Console
+### Animações Tailwind
+
+- `animate-slide-up` - Entrada de baixo para cima
+- `animate-slide-down` - Entrada de cima para baixo
+- `animate-slide-in` - Entrada lateral
+- `animate-fade-in` - Fade suave
+- `animate-scale-in` - Escala com entrada
+
+Delays escalonados para efeito cascata: `0ms`, `100ms`, `200ms`, `300ms`
 
 ---
 
 ## 🗺️ Roadmap
 
+### ✅ Implementado
+
+- [x] Sistema completo de eventos (7 tipos)
+- [x] Checklist integrado em tarefas
+- [x] Sistema de recorrência (diária, semanal, mensal)
+- [x] Tracking de hábitos com streak e progresso
+- [x] Edição e exclusão de eventos
+- [x] Suporte a horários personalizados
+- [x] Design minimalista com animações
+- [x] Logo e branding personalizado
+- [x] Frases inspiradoras na Dashboard
+- [x] Clean Architecture
+- [x] Autenticação completa
+
 ### 🚧 Em Desenvolvimento
 
+- [ ] 🎵 **Módulo de Música**
+  - [ ] Integração com Spotify API
+  - [ ] Exibição de playlists
+  - [ ] Estatísticas de escuta
+  - [ ] Top artistas e músicas
+
+- [ ] 🎮 **Módulo de Games**
+  - [ ] Integração com Steam API
+  - [ ] Biblioteca de jogos
+  - [ ] Tempo de jogo
+  - [ ] Conquistas
+
 - [ ] 💰 **Módulo de Finanças**
-  - [ ] Adicionar receitas e despesas
-  - [ ] Categorização de transações
+  - [ ] Receitas e despesas
+  - [ ] Categorização
   - [ ] Gráficos e relatórios
   - [ ] Metas financeiras
 
-- [ ] 🎨 **Módulo de Hobbies**
-  - [ ] Rastreamento de atividades
-  - [ ] Timer para hobbies
-  - [ ] Estatísticas de tempo gasto
-
 ### 🔮 Futuro
 
-- [ ] 📊 Dashboard com widgets customizáveis
+- [ ] 📊 Widgets customizáveis na Dashboard
 - [ ] 🔔 Notificações push do sistema
 - [ ] 🌍 Internacionalização (i18n)
 - [ ] 📱 Versão mobile (React Native)
 - [ ] 🎨 Temas customizáveis
 - [ ] 📤 Export/Import de dados
+- [ ] 🔄 Sincronização Google Calendar
 - [ ] 🤝 Compartilhamento de eventos
-- [ ] 🔄 Sincronização com Google Calendar
-
----
-
-## 🐛 Problemas Conhecidos
-
-### Linux - Erro GLib no Console
-
-```
-ERROR:content/browser/browser_main_loop.cc:286] GLib-GObject: ...
-```
-
-**Solução**: Esse é um warning interno do Electron no Linux. Pode ser **ignorado** - não afeta a funcionalidade.
-
-### DevTools Não Abre
-
-Se `F12` ou `Ctrl+Shift+I` não funcionarem, o DevTools abre automaticamente em modo de desenvolvimento.
 
 ---
 
@@ -493,19 +418,17 @@ Contribuições são muito bem-vindas! ❤️
 
 1. 🍴 **Fork** o projeto
 2. 🌿 Crie uma branch: `git checkout -b feature/MinhaFeature`
-3. 💾 Commit suas mudanças: `git commit -m 'feat: Adiciona MinhaFeature'`
-4. 📤 Push para a branch: `git push origin feature/MinhaFeature`
+3. 💾 Commit: `git commit -m 'feat: Adiciona MinhaFeature'`
+4. 📤 Push: `git push origin feature/MinhaFeature`
 5. 🔃 Abra um **Pull Request**
 
-### Padrões de Commit
-
-Usamos [Conventional Commits](https://www.conventionalcommits.org/):
+### Conventional Commits
 
 - `feat:` Nova funcionalidade
 - `fix:` Correção de bug
 - `docs:` Documentação
-- `style:` Formatação
-- `refactor:` Refatoração de código
+- `style:` Formatação (sem mudança de código)
+- `refactor:` Refatoração
 - `test:` Testes
 - `chore:` Tarefas gerais
 
@@ -513,68 +436,38 @@ Usamos [Conventional Commits](https://www.conventionalcommits.org/):
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**.
-
-```
-MIT License
-
-Copyright (c) 2025 DayCraft
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
-Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença **MIT**. Veja [LICENSE](LICENSE) para detalhes.
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido com 💙 e ☕ para facilitar o gerenciamento pessoal diário.
+**Vinicius Rolim Barbosa**
 
-### Conecte-se
-
-- 🐙 GitHub: [Viniirb](https://github.com/Viniirb)
+- 🐙 GitHub: [@Viniirb](https://github.com/Viniirb)
 - 💼 LinkedIn: [Vinicius Rolim Barbosa](https://www.linkedin.com/in/vinicius-rolim-barbosa-15b066374/)
 
 ---
 
 ## 🙏 Agradecimentos
 
-Agradecimentos especiais às tecnologias e comunidades:
-
-- [React Team](https://react.dev/) - Por essa incrível biblioteca
-- [Electron Community](https://www.electronjs.org/) - Desktop apps simplificados
-- [Firebase](https://firebase.google.com/) - Backend poderoso e fácil
-- [FullCalendar](https://fullcalendar.io/) - Calendário rico em recursos
-- [Tailwind Labs](https://tailwindcss.com/) - CSS utilitário fantástico
+- [React Team](https://react.dev/) - Biblioteca incrível
+- [Electron](https://www.electronjs.org/) - Desktop apps simplificados
+- [Firebase](https://firebase.google.com/) - Backend poderoso
+- [FullCalendar](https://fullcalendar.io/) - Calendário completo
+- [Tailwind CSS](https://tailwindcss.com/) - CSS utilitário
 
 ---
 
 <div align="center">
 
-<!-- Banner de fechamento animado -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer" />
 
 ### ⭐ Se este projeto foi útil, deixe uma estrela!
 
 **DayCraft** - Organize sua vida, um dia de cada vez.
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=500&lines=Made+with+%E2%9D%A4%EF%B8%8F+using+React+%2B+TypeScript;Powered+by+Electron+%2B+Firebase;Open+Source+%E2%9C%A8+Contribute+Today!" alt="Footer Typing SVG" />
-
-<!-- Botões de ação -->
-<p>
-  <a href="#-daycraft">
-    <img src="https://img.shields.io/badge/⬆_Voltar_ao_topo-6366F1?style=for-the-badge" alt="Voltar ao topo" />
-  </a>
-  <a href="https://github.com/seu-usuario/daycraft/issues">
-    <img src="https://img.shields.io/badge/🐛_Reportar_Bug-ef4444?style=for-the-badge" alt="Reportar Bug" />
-  </a>
-  <a href="https://github.com/seu-usuario/daycraft/fork">
-    <img src="https://img.shields.io/badge/🍴_Fork_Now-22c55e?style=for-the-badge" alt="Fork" />
-  </a>
-</p>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=500&lines=Made+with+%E2%9D%A4%EF%B8%8F+using+React+%2B+TypeScript;Powered+by+Electron+%2B+Firebase;Clean+Architecture+%E2%9C%A8+Open+Source" alt="Footer" />
 
 <br><br>
 

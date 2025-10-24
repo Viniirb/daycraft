@@ -1,4 +1,4 @@
-import { Event, EventStatus } from '../../../domain/entities/Event';
+import { Event, EventStatus, ChecklistItem } from '../../../domain/entities/Event';
 import { EventType } from '../../../domain/value-objects/EventType';
 import { DateRange } from '../../../domain/value-objects/DateRange';
 
@@ -12,6 +12,10 @@ export interface FirestoreEventData {
   userId: string;
   createdAt?: string;
   updatedAt?: string;
+  checklist?: ChecklistItem[];
+  recurrence?: string;
+  habitGoal?: number;
+  habitStreak?: number;
 }
 
 export class EventMapper {
@@ -30,7 +34,11 @@ export class EventMapper {
       status: event.status,
       userId: event.userId,
       createdAt: event.createdAt?.toISOString() || new Date().toISOString(),
-      updatedAt: event.updatedAt?.toISOString() || new Date().toISOString()
+      updatedAt: event.updatedAt?.toISOString() || new Date().toISOString(),
+      checklist: event.checklist,
+      recurrence: event.recurrence,
+      habitGoal: event.habitGoal,
+      habitStreak: event.habitStreak
     };
   }
 
@@ -49,7 +57,11 @@ export class EventMapper {
       data.userId,
       this.mapStatus(data.status),
       data.createdAt ? new Date(data.createdAt) : new Date(),
-      data.updatedAt ? new Date(data.updatedAt) : new Date()
+      data.updatedAt ? new Date(data.updatedAt) : new Date(),
+      data.checklist,
+      data.recurrence,
+      data.habitGoal,
+      data.habitStreak
     );
   }
 

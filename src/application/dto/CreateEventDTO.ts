@@ -9,4 +9,12 @@ export interface CreateEventDTO {
   end: string;   // ISO string
   allDay: boolean;
   userId: string;
+  checklist?: Array<{
+    id: string;
+    text: string;
+    completed: boolean;
+  }>;
+  recurrence?: string;
+  habitGoal?: number;
+  habitStreak?: number;
 }

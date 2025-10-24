@@ -26,23 +26,16 @@ export class FirebaseEventRepository implements IEventRepository {
 
   async create(event: Event): Promise<Event> {
     try {
-      console.log('FirebaseEventRepository.create - Iniciando criação do evento:', event);
       const eventData = EventMapper.toFirestore(event);
-      console.log('FirebaseEventRepository.create - Dados convertidos:', eventData);
-
       const docRef = await addDoc(collection(firestore, this.collectionName), eventData);
-      console.log('FirebaseEventRepository.create - Documento criado com ID:', docRef.id);
 
-      // Buscar o evento criado para retornar com ID
       const createdEvent = await this.findById(docRef.id);
       if (!createdEvent) {
         throw new Error('Erro ao criar evento');
       }
 
-      console.log('FirebaseEventRepository.create - Evento criado com sucesso:', createdEvent);
       return createdEvent;
     } catch (error: unknown) {
-      console.error('FirebaseEventRepository.create - Erro:', error);
       throw new Error(`Erro ao criar evento: ${(error as Error).message}`);
     }
   }

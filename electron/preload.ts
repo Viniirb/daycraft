@@ -1,1 +1,0 @@
-console.log('[DayCraft] Script de Preload carregado com sucesso!');

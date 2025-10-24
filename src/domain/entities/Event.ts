@@ -8,6 +8,12 @@ export enum EventStatus {
   CANCELLED = 'Cancelado'
 }
 
+export interface ChecklistItem {
+  id: string;
+  text: string;
+  completed: boolean;
+}
+
 export class Event {
   constructor(
     public readonly id: string,
@@ -18,6 +24,10 @@ export class Event {
     public readonly status: EventStatus = EventStatus.NOT_STARTED,
     public readonly createdAt?: Date,
     public readonly updatedAt?: Date,
+    public readonly checklist?: ChecklistItem[],
+    public readonly recurrence?: string,
+    public readonly habitGoal?: number,
+    public readonly habitStreak?: number,
     private readonly skipIdValidation: boolean = false
   ) {
     this.validate();
@@ -78,7 +88,11 @@ export class Event {
     type: EventType,
     dateRange: DateRange,
     userId: string,
-    status: EventStatus = EventStatus.NOT_STARTED
+    status: EventStatus = EventStatus.NOT_STARTED,
+    checklist?: ChecklistItem[],
+    recurrence?: string,
+    habitGoal?: number,
+    habitStreak?: number
   ): Event {
     return new Event(
       id,
@@ -89,6 +103,10 @@ export class Event {
       status,
       new Date(),
       new Date(),
+      checklist,
+      recurrence,
+      habitGoal,
+      habitStreak,
       true // skipIdValidation: permite ID vazio ao criar novo evento
     );
   }
@@ -101,7 +119,11 @@ export class Event {
     userId: string,
     status: EventStatus,
     createdAt: Date,
-    updatedAt: Date
+    updatedAt: Date,
+    checklist?: ChecklistItem[],
+    recurrence?: string,
+    habitGoal?: number,
+    habitStreak?: number
   ): Event {
     return new Event(
       id,
@@ -112,6 +134,10 @@ export class Event {
       status,
       createdAt,
       updatedAt,
+      checklist,
+      recurrence,
+      habitGoal,
+      habitStreak,
       false // skipIdValidation: false porque o ID já deve existir ao reconstruir
     );
   }

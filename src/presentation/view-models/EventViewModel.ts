@@ -18,6 +18,14 @@ export interface EventViewModel {
     typeLabel: string;
     status: string;
     userId: string;
+    checklist?: Array<{
+      id: string;
+      text: string;
+      completed: boolean;
+    }>;
+    recurrence?: string;
+    habitGoal?: number;
+    habitStreak?: number;
   };
 }
 
@@ -41,7 +49,11 @@ export function eventToViewModel(event: Event): EventViewModel {
       type: event.type.getValue(),
       typeLabel: event.type.getLabel(),
       status: event.status,
-      userId: event.userId
+      userId: event.userId,
+      checklist: event.checklist,
+      recurrence: event.recurrence,
+      habitGoal: event.habitGoal,
+      habitStreak: event.habitStreak
     }
   };
 }
